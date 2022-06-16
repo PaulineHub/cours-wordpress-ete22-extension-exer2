@@ -11,4 +11,12 @@
     height: 50vh;
     top: 25vh;
     left: 25vw;
+    transform: scale(0);
+    opacity: 0;
+    transition: transform 1s, opacity 1s;
+}
+
+.boite__modale__ouvrir {
+    transform: scale(1);
+    opacity: 1;
 }
