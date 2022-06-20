@@ -1,11 +1,12 @@
 .code_adresse {
   margin: 10px;
   padding: 10px;
-  border-left: 4px solid #005;
+  border-left: 4px solid #461431;
 }
 
 .boite__modale {
-  background-color: #c9afa0;
+  background-color: #eeeeee;
+  border-radius: 5px;
   position: absolute;
   width: 50vw;
   height: 50vh;
@@ -14,6 +15,7 @@
   transform: scale(0);
   opacity: 0;
   transition: transform 1s, opacity 1s;
+  border: 2px solid grey;
 }
 
 .boite__modale__ouvrir {
@@ -27,9 +29,16 @@
   position: absolute;
   top: 10px;
   left: 10px;
-  background-color: white;
-  color: #c9afa0;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   padding: 0;
+  border-color: #461431;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.boite__modale button {
+  padding: none;
+}
+
+.elmBoite__contenu {
+  margin: 80px 40px;
 }
 /*# sourceMappingURL=style.css.map */
