@@ -17,12 +17,13 @@
                 elmBoite__X.innerHTML = "X";
                 elmBoite__modale.classList.add('boite__modale');
                 let elmBody = document.querySelector('body');
-                let mon_petit_contenu = document.querySelector('.code_adresse').innerHTML;
-                elmBoite__contenu.innerHTML = mon_petit_contenu;
+                let adresseCollege = document.querySelector('.code_adresse').innerHTML;
+                elmBoite__contenu.innerHTML = insereDomString(adresseCollege);
 
                 elmBody.appendChild(elmBoite__modale);
-                //elmBoite__contenu.innerHTML = "ceci est un test"
+                
             }
+
             creer_boite_modale()
 
             //document.querySelector('.boite__modale');
@@ -36,5 +37,15 @@
             elmBoite__X.addEventListener('mousedown', function() {
                 elmBoite__modale.classList.remove('boite__modale__ouvrir')
             })
+
+            function insereDomString(adresse) {
+                const domString = `
+                <h2>Campus principal</h2>
+                <p>${adresse}</p>
+                <p>Tél.: 514 254-7131</p>
+                <p>communic@cmaisonneuve.qc.ca</p>
+                `;
+                return domString
+            }
 
         })();
