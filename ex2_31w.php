@@ -30,4 +30,3 @@ function genere_adresse()
 }
 
 add_shortcode('adr', 'genere_adresse');
-// commentaire
