@@ -4,6 +4,7 @@
             let elmBoite__modale;
             let elmBoite__X;
             let elmBoite__contenu;
+            let elP = document.querySelector('.site__main p').nextSibling;
 
             function creer_boite_modale()
             {
@@ -18,7 +19,8 @@
                 elmBoite__modale.classList.add('boite__modale');
                 let elmBody = document.querySelector('body');
                 let adresseCollege = document.querySelector('.code_adresse').innerHTML;
-                elmBoite__contenu.innerHTML = insereDomString(adresseCollege);
+                /* elmBoite__contenu.innerHTML = insereDomString(adresseCollege); */
+                elmBoite__contenu.innerHTML = elP.innerHTML;
 
                 elmBody.appendChild(elmBoite__modale);
                 
